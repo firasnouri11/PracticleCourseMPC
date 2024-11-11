@@ -42,9 +42,9 @@ u_traj = [];             % Control trajectory for plotting
 % MPC Loop
 for t = 1:T
 
-    u = -0.5 * x(1);      
+    u = -0.5 * x(1);     % K=0.5 the proortional gain and x1 is the first state variable   
     
-% achieve stability
+% achieve stability:       simple control strategy to stabilize the system.
 
 
     % Apply constraints to the control input
